@@ -1,0 +1,12 @@
+library ieee;
+
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+
+package Color is
+  constant Reset : Std_Logic;
+end package Timing;
+package body Timing is
+  constant Reset: Std_Logic := '0';
+end package body Timing;
