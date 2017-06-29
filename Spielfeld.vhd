@@ -2,8 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-
-
+use work.Color.all;
 
 entity Spielfeld is
 
@@ -13,7 +12,7 @@ entity Spielfeld is
 		Spielfeld_breite  			: integer := 800; -- 0-799
 	--	Netz_breite 					: integer := 10 ;
 		Ball_radius 					: integer := 7;
-		Netz_Color						: std_logic_vector (3 downto 0) := x"C"
+		Netz_Color						: std_logic_vector (3 downto 0) := black
 	);
 
 	port(
