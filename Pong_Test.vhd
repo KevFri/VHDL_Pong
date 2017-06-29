@@ -3,6 +3,8 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+use work.Color.all;
+
 entity Pong_Test is
 
 port(
@@ -28,14 +30,14 @@ architecture behave of Pong_Test is
 	signal VGA_Pos_Y:  std_logic_vector(9 downto 0) := (others => '0');		--Vertikal Y Koordinate  --Standardwert neu hinzugefügt
 	
 		-------------------------------------------------------------
-	--signal VGA_Paddle1_Pixel_En: in std_logic;		--Enable für aktuelles Pixel, High aktiv
-	--signal VGA_Paddle2_Pixel_En: in std_logic;		--Enable für aktuelles Pixel, High aktiv
-	--signal VGA_Ball_Pixel_En: in std_logic;			--Enable für aktuelles Pixel, High aktiv
+	signal VGA_Paddle1_Pixel_En: std_logic;		--Enable für aktuelles Pixel, High aktiv
+	signal VGA_Paddle2_Pixel_En: std_logic;		--Enable für aktuelles Pixel, High aktiv
+	signal VGA_Ball_Pixel_En: std_logic;			--Enable für aktuelles Pixel, High aktiv
 	signal VGA_Spielfeld_Pixel_En:  std_logic;	--Enable für aktuelles Pixel, High aktiv
 	-------------------------------------------------------------
-	--signal VGA_Paddle1_Pixel_Color: in std_logic_vector(3 downto 0);		--Farbe für aktuelles Pixel
-	--signal VGA_Paddle2_Pixel_Color: in std_logic_vector(3 downto 0);		--Farbe für aktuelles Pixel
-	--signal VGA_Ball_Pixel_Color: in std_logic_vector(3 downto 0);			--Farbe für aktuelles Pixel
+	signal VGA_Paddle1_Pixel_Color: std_logic_vector(3 downto 0);		--Farbe für aktuelles Pixel
+	signal VGA_Paddle2_Pixel_Color: std_logic_vector(3 downto 0);		--Farbe für aktuelles Pixel
+	signal VGA_Ball_Pixel_Color: std_logic_vector(3 downto 0);			--Farbe für aktuelles Pixel
 	signal VGA_Spielfeld_Pixel_Color:  std_logic_vector(3 downto 0);		--Farbe für aktuelles Pixel
 
 	begin
@@ -44,19 +46,13 @@ VGA: entity work.VGA
 
 		port map(Reset,
 					Clk,
-					--VGA_Paddle1_Pixel_En,
-					'0',
-					--VGA_Paddle2_Pixel_En,
-					'0',
-					--VGA_Ball_Pixel_En,
-					'0',
+					VGA_Paddle1_Pixel_En,
+					VGA_Paddle2_Pixel_En,
+					VGA_Ball_Pixel_En,
 					VGA_Spielfeld_Pixel_En,
-					--VGA_Paddle1_Pixel_Color,
-					"0000",
-					--VGA_Paddle2_Pixel_Color,
-					"0000",
-					--VGA_Ball_Pixel_Color,
-					"0000",
+					VGA_Paddle1_Pixel_Color,
+					VGA_Paddle2_Pixel_Color,
+					VGA_Ball_Pixel_Color,
 					VGA_Spielfeld_Pixel_Color,
 					VGA_Pos_X,
 					VGA_Pos_Y,
@@ -85,5 +81,58 @@ Spielfeld: entity work.Spielfeld
 		VGA_Pos_Y 			
 	);
 					
-					
+			
+	PaddleLeft: entity work.PongObject
+	generic map(
+		StartPosX 	=> 10x"00F",
+		StartPosY 	=> 10x"02F",
+		breite 		=> 10x"01F",
+		hoehe 		=> 10x"09F",
+		Color			=> blue,
+		Motion		=> '1',
+		Speed			=> 10x"001"
+	)	
+	port map(
+		VGA_Paddle1_Pixel_Color,
+		VGA_Paddle1_Pixel_En,
+		VGA_Pos_X,
+		VGA_Pos_Y,
+		Clk
+	);
+
+	PaddleRight: entity work.PongObject
+	generic map(
+		StartPosX 	=> 10x"2F0",
+		StartPosY 	=> 10x"05F",
+		breite 		=> 10x"01F",
+		hoehe 		=> 10x"09F",
+		Color			=> green,
+		Motion		=> '1',
+		Speed			=> 10x"000"
+	)	
+	port map(
+		VGA_Paddle2_Pixel_Color,
+		VGA_Paddle2_Pixel_En,
+		VGA_Pos_X,
+		VGA_Pos_Y,
+		Clk
+	);	
+	
+	Ball: entity work.PongObject
+	generic map(
+		StartPosX 	=> 10x"186",
+		StartPosY 	=> 10x"122",
+		breite 		=> 10x"02F",
+		hoehe 		=> 10x"03F",
+		Color			=> magenta,
+		Motion		=> '0',
+		Speed			=> 10x"040"
+	)	
+	port map(
+		VGA_Ball_Pixel_Color,
+		VGA_Ball_Pixel_En,
+		VGA_Pos_X,
+		VGA_Pos_Y,
+		Clk
+	);	
 end architecture behave;
