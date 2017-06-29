@@ -5,6 +5,9 @@ use ieee.numeric_std.all;
 
 entity Image_Generator is
 
+generic(
+	Background_Color : std_logic_vector(3 downto 0) := x"2"
+);
 port(
 	Reset: in std_logic := '0';		--asynchroner Reset, High aktiv
 	Clk: in std_logic := '0';			--50MHz Clock
@@ -52,7 +55,7 @@ begin
 					elsif (VGA_Spielfeld_Pixel_En) then
 						VGA_Pixel_Color <= VGA_Spielfeld_Pixel_Color;
 					else
-						VGA_Pixel_Color <= x"2"; --Background Color
+						VGA_Pixel_Color <= Background_Color; --Background Color
 					end if;
 					
 				else  --setze alles auf Schwarz, wenn kein Enable vorhanden ist
