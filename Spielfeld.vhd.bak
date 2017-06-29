@@ -12,8 +12,7 @@ entity Spielfeld is
 		Spielfeld_hoehe 				: integer := 600; -- 0-599  
 		Spielfeld_breite  			: integer := 800; -- 0-799
 	--	Netz_breite 					: integer := 10 ;
-		Ball_radius 					: integer := 7;
-		Netz_Color						: std_logic_vector (3 downto 0) := x"C"
+		Ball_radius 					: integer := 7  
 	);
 
 	port(
@@ -60,48 +59,48 @@ architecture Behavioral of Spielfeld is
 			
 			
 --		if (iVGA_Pos_X > 394 AND iVGA_Pos_X < 406 AND iVGA_Pos_Y > 28 AND iVGA_Pos_Y <90) then
---			VGA_Spielfeld_Pixel_Color <= Netz_Color;
+--			VGA_Spielfeld_Pixel_Color <= x"F";
 --			VGA_Spielfeld_Pixel_En <= '1';
 --		
 		if (unsigned(VGA_Pos_X) > 394 AND unsigned(VGA_Pos_X) < 406 AND unsigned(VGA_Pos_Y) > 28 AND unsigned(VGA_Pos_Y) <90) then
-			VGA_Spielfeld_Pixel_Color <= Netz_Color;
+			VGA_Spielfeld_Pixel_Color <= x"F";
 			VGA_Spielfeld_Pixel_En <= '1';
 		
 
 --		
 --		elsif (iVGA_Pos_X > 394 AND iVGA_Pos_X < 406 AND iVGA_Pos_Y > 148 AND iVGA_Pos_Y <210) then
---			VGA_Spielfeld_Pixel_Color <= Netz_Color;
+--			VGA_Spielfeld_Pixel_Color <= x"F";
 --			VGA_Spielfeld_Pixel_En <= '1';
 
 		elsif (unsigned(VGA_Pos_X) > 394 AND unsigned(VGA_Pos_X) < 406 AND unsigned(VGA_Pos_Y) > 148 AND unsigned(VGA_Pos_Y) <210) then
-			VGA_Spielfeld_Pixel_Color <= Netz_Color;
+			VGA_Spielfeld_Pixel_Color <= x"F";
 			VGA_Spielfeld_Pixel_En <= '1';
 --		
 --		
 --		elsif (iVGA_Pos_X > 394 AND iVGA_Pos_X < 406 AND iVGA_Pos_Y > 268 AND iVGA_Pos_Y <330) then
---			VGA_Spielfeld_Pixel_Color <= Netz_Color;
+--			VGA_Spielfeld_Pixel_Color <= x"F";
 --			VGA_Spielfeld_Pixel_En <= '1';
 
 		elsif (unsigned(VGA_Pos_X) > 394 AND unsigned(VGA_Pos_X) < 406 AND unsigned(VGA_Pos_Y) > 268 AND unsigned(VGA_Pos_Y) <330) then
-			VGA_Spielfeld_Pixel_Color <= Netz_Color;
+			VGA_Spielfeld_Pixel_Color <= x"F";
 			VGA_Spielfeld_Pixel_En <= '1';
 			
 --		
 --		elsif (iVGA_Pos_X > 394 AND iVGA_Pos_X < 406 AND iVGA_Pos_Y > 388 AND iVGA_Pos_Y <450) then
---			VGA_Spielfeld_Pixel_Color <= Netz_Color;
+--			VGA_Spielfeld_Pixel_Color <= x"F";
 --			VGA_Spielfeld_Pixel_En <= '1';
 
 		elsif (unsigned(VGA_Pos_X) > 394 AND unsigned(VGA_Pos_X) < 406 AND unsigned(VGA_Pos_Y) > 388 AND unsigned(VGA_Pos_Y) <450) then
-			VGA_Spielfeld_Pixel_Color <= Netz_Color;
+			VGA_Spielfeld_Pixel_Color <= x"F";
 			VGA_Spielfeld_Pixel_En <= '1';
 --		
 --		
 --		elsif (iVGA_Pos_X > 394 AND iVGA_Pos_X < 406 AND iVGA_Pos_Y > 508 AND iVGA_Pos_Y <570) then
---			VGA_Spielfeld_Pixel_Color <= Netz_Color;
+--			VGA_Spielfeld_Pixel_Color <= x"F";
 --			VGA_Spielfeld_Pixel_En <= '1';
 
 		elsif (unsigned(VGA_Pos_X) > 394 AND unsigned(VGA_Pos_X) < 406 AND unsigned(VGA_Pos_Y) > 508 AND unsigned(VGA_Pos_Y) <570) then
-			VGA_Spielfeld_Pixel_Color <= Netz_Color;
+			VGA_Spielfeld_Pixel_Color <= x"F";
 			VGA_Spielfeld_Pixel_En <= '1';
 			
 			
