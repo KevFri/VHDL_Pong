@@ -84,8 +84,8 @@ Spielfeld: entity work.Spielfeld
 			
 	PaddleLeft: entity work.PongObject
 	generic map(
-		StartPosX 	=> 10x"00F",
-		StartPosY 	=> 10x"02F",
+		StartPosX 	=> 10x"190",
+		StartPosY 	=> 10x"0FF",
 		breite 		=> 10x"01F",
 		hoehe 		=> 10x"09F",
 		Color			=> blue,
@@ -125,8 +125,8 @@ Spielfeld: entity work.Spielfeld
 		breite 		=> 10x"02F",
 		hoehe 		=> 10x"03F",
 		Color			=> magenta,
-		Motion		=> '0',
-		Speed			=> 10x"040"
+		Motion		=> '1',
+		Speed			=> 10x"000"
 	)	
 	port map(
 		VGA_Ball_Pixel_Color,
