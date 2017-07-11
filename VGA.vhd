@@ -43,6 +43,17 @@ begin
 --VGA controller
 VGA_Clk <= Clk;
 VGA_Controller: entity work.VGA_Controller
+generic map(	
+				horizontal_sync_pulse_width=>120,
+				horizontal_back_porch_width=>64,
+				horizontal_image_width=>800,
+				horizontal_front_porch_width=> 56,
+				horizontal_sync_pulse_polariy=>'1',
+				vertikal_sync_pulse_width=> 6,
+				vertikal_back_porch_width=>23,
+				vertikal_image_width=>600,
+				vertikal_front_porch_width=> 37,
+				vertikal_sync_pulse_polariy=>'1')
 port map(	Reset, 
 				Clk, 
 				VGA_Pos_X, 

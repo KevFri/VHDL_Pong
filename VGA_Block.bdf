@@ -1,0 +1,660 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(properties
+	(page_setup "orientation\n1\npaper_size\n0\npaper_source\n6\nmargin\n1.000:1.000:1.000:1.000\n")
+)
+(pin
+	(input)
+	(rect 0 336 168 352)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (color 0 0 0)(font_size 6)))
+	(text "Reset" (rect 5 0 35 12)(font "Arial" (color 0 0 0)))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12)(color 0 0 0))
+		(line (pt 84 4)(pt 109 4)(color 0 0 0))
+		(line (pt 113 8)(pt 168 8)(color 0 0 0))
+		(line (pt 84 12)(pt 84 4)(color 0 0 0))
+		(line (pt 109 4)(pt 113 8)(color 0 0 0))
+		(line (pt 109 12)(pt 113 8)(color 0 0 0))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (color 0 0 0)(font_size 6)))
+)
+(pin
+	(input)
+	(rect 0 352 168 368)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (color 0 0 0)(font_size 6)))
+	(text "Clk" (rect 5 0 22 12)(font "Arial" (color 0 0 0)))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12)(color 0 0 0))
+		(line (pt 84 4)(pt 109 4)(color 0 0 0))
+		(line (pt 113 8)(pt 168 8)(color 0 0 0))
+		(line (pt 84 12)(pt 84 4)(color 0 0 0))
+		(line (pt 109 4)(pt 113 8)(color 0 0 0))
+		(line (pt 109 12)(pt 113 8)(color 0 0 0))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (color 0 0 0)(font_size 6)))
+)
+(pin
+	(input)
+	(rect -48 504 168 520)
+	(text "INPUT" (rect 173 0 201 10)(font "Arial" (color 0 0 0)(font_size 6)))
+	(text "VGA_Paddle1_Pixel_En" (rect 5 0 121 12)(font "Arial" (color 0 0 0)))
+	(pt 216 8)
+	(drawing
+		(line (pt 132 12)(pt 157 12)(color 0 0 0))
+		(line (pt 132 4)(pt 157 4)(color 0 0 0))
+		(line (pt 161 8)(pt 216 8)(color 0 0 0))
+		(line (pt 132 12)(pt 132 4)(color 0 0 0))
+		(line (pt 157 4)(pt 161 8)(color 0 0 0))
+		(line (pt 157 12)(pt 161 8)(color 0 0 0))
+	)
+	(text "VCC" (rect 176 7 196 17)(font "Arial" (color 0 0 0)(font_size 6)))
+)
+(pin
+	(input)
+	(rect -48 520 168 536)
+	(text "INPUT" (rect 173 0 201 10)(font "Arial" (color 0 0 0)(font_size 6)))
+	(text "VGA_Paddle2_Pixel_En" (rect 5 0 120 17)(font "Intel Clear" (color 0 0 0)))
+	(pt 216 8)
+	(drawing
+		(line (pt 132 12)(pt 157 12)(color 0 0 0))
+		(line (pt 132 4)(pt 157 4)(color 0 0 0))
+		(line (pt 161 8)(pt 216 8)(color 0 0 0))
+		(line (pt 132 12)(pt 132 4)(color 0 0 0))
+		(line (pt 157 4)(pt 161 8)(color 0 0 0))
+		(line (pt 157 12)(pt 161 8)(color 0 0 0))
+	)
+	(text "VCC" (rect 176 7 196 17)(font "Arial" (color 0 0 0)(font_size 6)))
+)
+(pin
+	(input)
+	(rect -32 536 168 552)
+	(text "INPUT" (rect 157 0 185 10)(font "Arial" (color 0 0 0)(font_size 6)))
+	(text "VGA_Ball_Pixel_En" (rect 5 0 100 17)(font "Intel Clear" (color 0 0 0)))
+	(pt 200 8)
+	(drawing
+		(line (pt 116 12)(pt 141 12)(color 0 0 0))
+		(line (pt 116 4)(pt 141 4)(color 0 0 0))
+		(line (pt 145 8)(pt 200 8)(color 0 0 0))
+		(line (pt 116 12)(pt 116 4)(color 0 0 0))
+		(line (pt 141 4)(pt 145 8)(color 0 0 0))
+		(line (pt 141 12)(pt 145 8)(color 0 0 0))
+	)
+	(text "VCC" (rect 160 7 180 17)(font "Arial" (color 0 0 0)(font_size 6)))
+)
+(pin
+	(input)
+	(rect -48 552 168 568)
+	(text "INPUT" (rect 173 0 201 10)(font "Arial" (color 0 0 0)(font_size 6)))
+	(text "VGA_Spielfeld_Pixel_En" (rect 5 0 122 17)(font "Intel Clear" (color 0 0 0)))
+	(pt 216 8)
+	(drawing
+		(line (pt 132 12)(pt 157 12)(color 0 0 0))
+		(line (pt 132 4)(pt 157 4)(color 0 0 0))
+		(line (pt 161 8)(pt 216 8)(color 0 0 0))
+		(line (pt 132 12)(pt 132 4)(color 0 0 0))
+		(line (pt 157 4)(pt 161 8)(color 0 0 0))
+		(line (pt 157 12)(pt 161 8)(color 0 0 0))
+	)
+	(text "VCC" (rect 176 7 196 17)(font "Arial" (color 0 0 0)(font_size 6)))
+)
+(pin
+	(input)
+	(rect -80 568 168 584)
+	(text "INPUT" (rect 205 0 233 10)(font "Arial" (color 0 0 0)(font_size 6)))
+	(text "VGA_Paddle1_Pixel_Color[3..0]" (rect 5 0 157 17)(font "Intel Clear" (color 0 0 0)))
+	(pt 248 8)
+	(drawing
+		(line (pt 164 12)(pt 189 12)(color 0 0 0))
+		(line (pt 164 4)(pt 189 4)(color 0 0 0))
+		(line (pt 193 8)(pt 248 8)(color 0 0 0))
+		(line (pt 164 12)(pt 164 4)(color 0 0 0))
+		(line (pt 189 4)(pt 193 8)(color 0 0 0))
+		(line (pt 189 12)(pt 193 8)(color 0 0 0))
+	)
+	(text "VCC" (rect 208 7 228 17)(font "Arial" (color 0 0 0)(font_size 6)))
+)
+(pin
+	(input)
+	(rect -80 584 168 600)
+	(text "INPUT" (rect 205 0 233 10)(font "Arial" (color 0 0 0)(font_size 6)))
+	(text "VGA_Paddle2_Pixel_Color[3..0]" (rect 5 0 158 17)(font "Intel Clear" (color 0 0 0)))
+	(pt 248 8)
+	(drawing
+		(line (pt 164 12)(pt 189 12)(color 0 0 0))
+		(line (pt 164 4)(pt 189 4)(color 0 0 0))
+		(line (pt 193 8)(pt 248 8)(color 0 0 0))
+		(line (pt 164 12)(pt 164 4)(color 0 0 0))
+		(line (pt 189 4)(pt 193 8)(color 0 0 0))
+		(line (pt 189 12)(pt 193 8)(color 0 0 0))
+	)
+	(text "VCC" (rect 208 7 228 17)(font "Arial" (color 0 0 0)(font_size 6)))
+)
+(pin
+	(input)
+	(rect -72 600 168 616)
+	(text "INPUT" (rect 197 0 225 10)(font "Arial" (color 0 0 0)(font_size 6)))
+	(text "VGA_Ball_Pixel_Color[3..0]" (rect 5 0 138 17)(font "Intel Clear" (color 0 0 0)))
+	(pt 240 8)
+	(drawing
+		(line (pt 156 12)(pt 181 12)(color 0 0 0))
+		(line (pt 156 4)(pt 181 4)(color 0 0 0))
+		(line (pt 185 8)(pt 240 8)(color 0 0 0))
+		(line (pt 156 12)(pt 156 4)(color 0 0 0))
+		(line (pt 181 4)(pt 185 8)(color 0 0 0))
+		(line (pt 181 12)(pt 185 8)(color 0 0 0))
+	)
+	(text "VCC" (rect 200 7 220 17)(font "Arial" (color 0 0 0)(font_size 6)))
+)
+(pin
+	(input)
+	(rect -88 616 168 632)
+	(text "INPUT" (rect 213 0 241 10)(font "Arial" (color 0 0 0)(font_size 6)))
+	(text "VGA_Spielfeld_Pixel_Color[3..0]" (rect 5 0 160 17)(font "Intel Clear" (color 0 0 0)))
+	(pt 256 8)
+	(drawing
+		(line (pt 172 12)(pt 197 12)(color 0 0 0))
+		(line (pt 172 4)(pt 197 4)(color 0 0 0))
+		(line (pt 201 8)(pt 256 8)(color 0 0 0))
+		(line (pt 172 12)(pt 172 4)(color 0 0 0))
+		(line (pt 197 4)(pt 201 8)(color 0 0 0))
+		(line (pt 197 12)(pt 201 8)(color 0 0 0))
+	)
+	(text "VCC" (rect 216 7 236 17)(font "Arial" (color 0 0 0)(font_size 6)))
+)
+(pin
+	(output)
+	(rect 816 336 996 352)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (color 0 0 0)(font_size 6)))
+	(text "VGA_Pos_X[9..0]" (rect 90 0 174 12)(font "Arial" (color 0 0 0)))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8)(color 0 0 0))
+		(line (pt 52 4)(pt 78 4)(color 0 0 0))
+		(line (pt 52 12)(pt 78 12)(color 0 0 0))
+		(line (pt 52 12)(pt 52 4)(color 0 0 0))
+		(line (pt 78 4)(pt 82 8)(color 0 0 0))
+		(line (pt 82 8)(pt 78 12)(color 0 0 0))
+		(line (pt 78 12)(pt 82 8)(color 0 0 0))
+	)
+)
+(pin
+	(output)
+	(rect 816 352 993 368)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (color 0 0 0)(font_size 6)))
+	(text "VGA_Pos_Y[9..0]" (rect 90 0 171 17)(font "Intel Clear" (color 0 0 0)))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8)(color 0 0 0))
+		(line (pt 52 4)(pt 78 4)(color 0 0 0))
+		(line (pt 52 12)(pt 78 12)(color 0 0 0))
+		(line (pt 52 12)(pt 52 4)(color 0 0 0))
+		(line (pt 78 4)(pt 82 8)(color 0 0 0))
+		(line (pt 82 8)(pt 78 12)(color 0 0 0))
+		(line (pt 78 12)(pt 82 8)(color 0 0 0))
+	)
+)
+(pin
+	(output)
+	(rect 816 368 992 384)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (color 0 0 0)(font_size 6)))
+	(text "VGA_HS" (rect 90 0 130 17)(font "Intel Clear" (color 0 0 0)))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8)(color 0 0 0))
+		(line (pt 52 4)(pt 78 4)(color 0 0 0))
+		(line (pt 52 12)(pt 78 12)(color 0 0 0))
+		(line (pt 52 12)(pt 52 4)(color 0 0 0))
+		(line (pt 78 4)(pt 82 8)(color 0 0 0))
+		(line (pt 82 8)(pt 78 12)(color 0 0 0))
+		(line (pt 78 12)(pt 82 8)(color 0 0 0))
+	)
+)
+(pin
+	(output)
+	(rect 816 384 992 400)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (color 0 0 0)(font_size 6)))
+	(text "VGA_VS" (rect 90 0 130 17)(font "Intel Clear" (color 0 0 0)))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8)(color 0 0 0))
+		(line (pt 52 4)(pt 78 4)(color 0 0 0))
+		(line (pt 52 12)(pt 78 12)(color 0 0 0))
+		(line (pt 52 12)(pt 52 4)(color 0 0 0))
+		(line (pt 78 4)(pt 82 8)(color 0 0 0))
+		(line (pt 82 8)(pt 78 12)(color 0 0 0))
+		(line (pt 78 12)(pt 82 8)(color 0 0 0))
+	)
+)
+(pin
+	(output)
+	(rect 816 456 992 472)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (color 0 0 0)(font_size 6)))
+	(text "VGA_R[7..0]" (rect 90 0 152 12)(font "Arial" (color 0 0 0)))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8)(color 0 0 0))
+		(line (pt 52 4)(pt 78 4)(color 0 0 0))
+		(line (pt 52 12)(pt 78 12)(color 0 0 0))
+		(line (pt 52 12)(pt 52 4)(color 0 0 0))
+		(line (pt 78 4)(pt 82 8)(color 0 0 0))
+		(line (pt 82 8)(pt 78 12)(color 0 0 0))
+		(line (pt 78 12)(pt 82 8)(color 0 0 0))
+	)
+)
+(pin
+	(output)
+	(rect 816 472 992 488)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (color 0 0 0)(font_size 6)))
+	(text "VGA_G[7..0]" (rect 90 0 147 17)(font "Intel Clear" (color 0 0 0)))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8)(color 0 0 0))
+		(line (pt 52 4)(pt 78 4)(color 0 0 0))
+		(line (pt 52 12)(pt 78 12)(color 0 0 0))
+		(line (pt 52 12)(pt 52 4)(color 0 0 0))
+		(line (pt 78 4)(pt 82 8)(color 0 0 0))
+		(line (pt 82 8)(pt 78 12)(color 0 0 0))
+		(line (pt 78 12)(pt 82 8)(color 0 0 0))
+	)
+)
+(pin
+	(output)
+	(rect 816 488 992 504)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (color 0 0 0)(font_size 6)))
+	(text "VGA_B[7..0]" (rect 90 0 147 17)(font "Intel Clear" (color 0 0 0)))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8)(color 0 0 0))
+		(line (pt 52 4)(pt 78 4)(color 0 0 0))
+		(line (pt 52 12)(pt 78 12)(color 0 0 0))
+		(line (pt 52 12)(pt 52 4)(color 0 0 0))
+		(line (pt 78 4)(pt 82 8)(color 0 0 0))
+		(line (pt 82 8)(pt 78 12)(color 0 0 0))
+		(line (pt 78 12)(pt 82 8)(color 0 0 0))
+	)
+)
+(symbol
+	(rect 504 432 792 672)
+	(text "Image_Generator" (rect 5 0 89 12)(font "Arial" (color 0 0 0)))
+	(text "ImageGenerator" (rect 8 224 84 241)(font "Intel Clear" (color 0 0 0)))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Reset" (rect 0 0 29 12)(font "Arial" ))
+		(text "Reset" (rect 21 27 50 39)(font "Arial" (color 0 0 0)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Clk" (rect 0 0 16 12)(font "Arial" ))
+		(text "Clk" (rect 21 43 37 55)(font "Arial" (color 0 0 0)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "ImageGen_En" (rect 0 0 69 12)(font "Arial" ))
+		(text "ImageGen_En" (rect 21 59 90 71)(font "Arial" (color 0 0 0)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "VGA_Paddle1_Pixel_En" (rect 0 0 115 12)(font "Arial" ))
+		(text "VGA_Paddle1_Pixel_En" (rect 21 75 136 87)(font "Arial" (color 0 0 0)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "VGA_Paddle2_Pixel_En" (rect 0 0 115 12)(font "Arial" ))
+		(text "VGA_Paddle2_Pixel_En" (rect 21 91 136 103)(font "Arial" (color 0 0 0)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "VGA_Ball_Pixel_En" (rect 0 0 94 12)(font "Arial" ))
+		(text "VGA_Ball_Pixel_En" (rect 21 107 115 119)(font "Arial" (color 0 0 0)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "VGA_Spielfeld_Pixel_En" (rect 0 0 119 12)(font "Arial" ))
+		(text "VGA_Spielfeld_Pixel_En" (rect 21 123 140 135)(font "Arial" (color 0 0 0)))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "VGA_Paddle1_Pixel_Color[3..0]" (rect 0 0 154 12)(font "Arial" ))
+		(text "VGA_Paddle1_Pixel_Color[3..0]" (rect 21 139 175 151)(font "Arial" (color 0 0 0)))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "VGA_Paddle2_Pixel_Color[3..0]" (rect 0 0 154 12)(font "Arial" ))
+		(text "VGA_Paddle2_Pixel_Color[3..0]" (rect 21 155 175 167)(font "Arial" (color 0 0 0)))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "VGA_Ball_Pixel_Color[3..0]" (rect 0 0 133 12)(font "Arial" ))
+		(text "VGA_Ball_Pixel_Color[3..0]" (rect 21 171 154 183)(font "Arial" (color 0 0 0)))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "VGA_Spielfeld_Pixel_Color[3..0]" (rect 0 0 158 12)(font "Arial" ))
+		(text "VGA_Spielfeld_Pixel_Color[3..0]" (rect 21 187 179 199)(font "Arial" (color 0 0 0)))
+		(line (pt 0 192)(pt 16 192)(line_width 3))
+	)
+	(port
+		(pt 288 32)
+		(output)
+		(text "VGA_R[7..0]" (rect 0 0 62 12)(font "Arial" ))
+		(text "VGA_R[7..0]" (rect 215 27 277 39)(font "Arial" (color 0 0 0)))
+		(line (pt 288 32)(pt 272 32)(line_width 3))
+	)
+	(port
+		(pt 288 48)
+		(output)
+		(text "VGA_G[7..0]" (rect 0 0 62 12)(font "Arial" ))
+		(text "VGA_G[7..0]" (rect 215 43 277 55)(font "Arial" (color 0 0 0)))
+		(line (pt 288 48)(pt 272 48)(line_width 3))
+	)
+	(port
+		(pt 288 64)
+		(output)
+		(text "VGA_B[7..0]" (rect 0 0 61 12)(font "Arial" ))
+		(text "VGA_B[7..0]" (rect 216 59 277 71)(font "Arial" (color 0 0 0)))
+		(line (pt 288 64)(pt 272 64)(line_width 3))
+	)
+	(parameter
+		"Background_Color"
+		"1111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(drawing
+		(rectangle (rect 16 16 272 224)(color 0 0 0))
+	)
+	(annotation_block (parameter)(rect 792 536 1016 576))
+	(fill (color 255 255 255))
+)
+(symbol
+	(rect 256 312 456 456)
+	(text "VGA_Controller" (rect 5 0 80 12)(font "Arial" (color 0 0 0)))
+	(text "VGAController" (rect 8 128 77 140)(font "Arial" (color 0 0 0)))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Reset" (rect 0 0 29 12)(font "Arial" ))
+		(text "Reset" (rect 21 27 50 39)(font "Arial" (color 0 0 0)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Clk" (rect 0 0 16 12)(font "Arial" ))
+		(text "Clk" (rect 21 43 37 55)(font "Arial" (color 0 0 0)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 200 32)
+		(output)
+		(text "VGA_Pos_X[9..0]" (rect 0 0 84 12)(font "Arial" ))
+		(text "VGA_Pos_X[9..0]" (rect 108 27 192 39)(font "Arial" (color 0 0 0)))
+		(line (pt 200 32)(pt 184 32)(line_width 3))
+	)
+	(port
+		(pt 200 48)
+		(output)
+		(text "VGA_Pos_Y[9..0]" (rect 0 0 87 12)(font "Arial" ))
+		(text "VGA_Pos_Y[9..0]" (rect 106 43 193 55)(font "Arial" (color 0 0 0)))
+		(line (pt 200 48)(pt 184 48)(line_width 3))
+	)
+	(port
+		(pt 200 64)
+		(output)
+		(text "VGA_HS" (rect 0 0 43 12)(font "Arial" ))
+		(text "VGA_HS" (rect 143 59 186 71)(font "Arial" (color 0 0 0)))
+		(line (pt 200 64)(pt 184 64))
+	)
+	(port
+		(pt 200 80)
+		(output)
+		(text "VGA_VS" (rect 0 0 42 12)(font "Arial" ))
+		(text "VGA_VS" (rect 144 75 186 87)(font "Arial" (color 0 0 0)))
+		(line (pt 200 80)(pt 184 80))
+	)
+	(port
+		(pt 200 96)
+		(output)
+		(text "ImageGen_En" (rect 0 0 69 12)(font "Arial" ))
+		(text "ImageGen_En" (rect 121 91 190 103)(font "Arial" (color 0 0 0)))
+		(line (pt 200 96)(pt 184 96))
+	)
+	(parameter
+		"horizontal_sync_pulse_width"
+		"120"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"horizontal_back_porch_width"
+		"64"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"horizontal_image_width"
+		"800"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"horizontal_front_porch_width"
+		"56"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"horizontal_sync_pulse_polariy"
+		"'1'"
+		""
+		(type "PARAMETER_ENUM")	)
+	(parameter
+		"vertikal_sync_pulse_width"
+		"6"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"vertikal_back_porch_width"
+		"23"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"vertikal_image_width"
+		"600"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"vertikal_front_porch_width"
+		"37"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"vertikal_sync_pulse_polariy"
+		"'1'"
+		""
+		(type "PARAMETER_ENUM")	)
+	(drawing
+		(rectangle (rect 16 16 184 128)(color 0 0 0))
+	)
+	(annotation_block (parameter)(rect 456 96 736 312))
+	(fill (color 255 255 255))
+)
+(connector
+	(pt 224 344)
+	(pt 224 464)
+	(color 0 0 0)
+)
+(connector
+	(pt 208 360)
+	(pt 208 480)
+	(color 0 0 0)
+)
+(connector
+	(pt 456 408)
+	(pt 480 408)
+	(color 0 0 0)
+)
+(connector
+	(pt 480 408)
+	(pt 480 496)
+	(color 0 0 0)
+)
+(connector
+	(pt 224 464)
+	(pt 504 464)
+	(color 0 0 0)
+)
+(connector
+	(pt 208 480)
+	(pt 504 480)
+	(color 0 0 0)
+)
+(connector
+	(pt 480 496)
+	(pt 504 496)
+	(color 0 0 0)
+)
+(connector
+	(pt 456 344)
+	(pt 816 344)
+	(bus)
+	(color 0 0 0)
+)
+(connector
+	(pt 456 360)
+	(pt 816 360)
+	(bus)
+	(color 0 0 0)
+)
+(connector
+	(pt 456 376)
+	(pt 816 376)
+	(color 0 0 0)
+)
+(connector
+	(pt 456 392)
+	(pt 816 392)
+	(color 0 0 0)
+)
+(connector
+	(pt 792 464)
+	(pt 816 464)
+	(bus)
+	(color 0 0 0)
+)
+(connector
+	(pt 792 480)
+	(pt 816 480)
+	(bus)
+	(color 0 0 0)
+)
+(connector
+	(pt 792 496)
+	(pt 816 496)
+	(bus)
+	(color 0 0 0)
+)
+(connector
+	(pt 504 512)
+	(pt 168 512)
+	(color 0 0 0)
+)
+(connector
+	(pt 504 528)
+	(pt 168 528)
+	(color 0 0 0)
+)
+(connector
+	(pt 504 544)
+	(pt 168 544)
+	(color 0 0 0)
+)
+(connector
+	(pt 504 560)
+	(pt 168 560)
+	(color 0 0 0)
+)
+(connector
+	(pt 504 576)
+	(pt 168 576)
+	(bus)
+	(color 0 0 0)
+)
+(connector
+	(pt 504 592)
+	(pt 168 592)
+	(bus)
+	(color 0 0 0)
+)
+(connector
+	(pt 504 608)
+	(pt 168 608)
+	(bus)
+	(color 0 0 0)
+)
+(connector
+	(pt 504 624)
+	(pt 168 624)
+	(bus)
+	(color 0 0 0)
+)
+(connector
+	(pt 168 344)
+	(pt 224 344)
+)
+(connector
+	(pt 224 344)
+	(pt 256 344)
+)
+(connector
+	(pt 168 360)
+	(pt 208 360)
+	(color 0 0 0)
+)
+(connector
+	(pt 208 360)
+	(pt 256 360)
+	(color 0 0 0)
+)
+(junction (pt 208 360))
+(junction (pt 224 344))
+(text "VGA" (rect 192 264 217 283)(font "Intel Clear" (color 0 0 0)(font_size 8)))
+(rectangle (rect 184 264 800 688))
