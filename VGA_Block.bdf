@@ -25,9 +25,9 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect 0 336 168 352)
+	(rect -72 112 96 128)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (color 0 0 0)(font_size 6)))
-	(text "Reset" (rect 5 0 35 12)(font "Arial" (color 0 0 0)))
+	(text "Reset" (rect 5 0 34 12)(font "Arial" (color 0 0 0)))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12)(color 0 0 0))
@@ -41,9 +41,9 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect 0 352 168 368)
+	(rect -72 128 96 144)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (color 0 0 0)(font_size 6)))
-	(text "Clk" (rect 5 0 22 12)(font "Arial" (color 0 0 0)))
+	(text "Clk" (rect 5 0 21 12)(font "Arial" (color 0 0 0)))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12)(color 0 0 0))
@@ -57,9 +57,9 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect -48 504 168 520)
+	(rect -120 280 96 296)
 	(text "INPUT" (rect 173 0 201 10)(font "Arial" (color 0 0 0)(font_size 6)))
-	(text "VGA_Paddle1_Pixel_En" (rect 5 0 121 12)(font "Arial" (color 0 0 0)))
+	(text "VGA_Paddle1_Pixel_En" (rect 5 0 120 12)(font "Arial" (color 0 0 0)))
 	(pt 216 8)
 	(drawing
 		(line (pt 132 12)(pt 157 12)(color 0 0 0))
@@ -73,9 +73,9 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect -48 520 168 536)
+	(rect -120 296 96 312)
 	(text "INPUT" (rect 173 0 201 10)(font "Arial" (color 0 0 0)(font_size 6)))
-	(text "VGA_Paddle2_Pixel_En" (rect 5 0 120 17)(font "Intel Clear" (color 0 0 0)))
+	(text "VGA_Paddle2_Pixel_En" (rect 5 0 119 17)(font "Intel Clear" (color 0 0 0)))
 	(pt 216 8)
 	(drawing
 		(line (pt 132 12)(pt 157 12)(color 0 0 0))
@@ -89,9 +89,9 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect -32 536 168 552)
+	(rect -104 312 96 328)
 	(text "INPUT" (rect 157 0 185 10)(font "Arial" (color 0 0 0)(font_size 6)))
-	(text "VGA_Ball_Pixel_En" (rect 5 0 100 17)(font "Intel Clear" (color 0 0 0)))
+	(text "VGA_Ball_Pixel_En" (rect 5 0 99 17)(font "Intel Clear" (color 0 0 0)))
 	(pt 200 8)
 	(drawing
 		(line (pt 116 12)(pt 141 12)(color 0 0 0))
@@ -105,9 +105,9 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect -48 552 168 568)
+	(rect -120 328 96 344)
 	(text "INPUT" (rect 173 0 201 10)(font "Arial" (color 0 0 0)(font_size 6)))
-	(text "VGA_Spielfeld_Pixel_En" (rect 5 0 122 17)(font "Intel Clear" (color 0 0 0)))
+	(text "VGA_Spielfeld_Pixel_En" (rect 5 0 121 17)(font "Intel Clear" (color 0 0 0)))
 	(pt 216 8)
 	(drawing
 		(line (pt 132 12)(pt 157 12)(color 0 0 0))
@@ -121,7 +121,7 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect -80 568 168 584)
+	(rect -152 344 96 360)
 	(text "INPUT" (rect 205 0 233 10)(font "Arial" (color 0 0 0)(font_size 6)))
 	(text "VGA_Paddle1_Pixel_Color[3..0]" (rect 5 0 157 17)(font "Intel Clear" (color 0 0 0)))
 	(pt 248 8)
@@ -137,9 +137,9 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect -80 584 168 600)
+	(rect -152 360 96 376)
 	(text "INPUT" (rect 205 0 233 10)(font "Arial" (color 0 0 0)(font_size 6)))
-	(text "VGA_Paddle2_Pixel_Color[3..0]" (rect 5 0 158 17)(font "Intel Clear" (color 0 0 0)))
+	(text "VGA_Paddle2_Pixel_Color[3..0]" (rect 5 0 157 17)(font "Intel Clear" (color 0 0 0)))
 	(pt 248 8)
 	(drawing
 		(line (pt 164 12)(pt 189 12)(color 0 0 0))
@@ -153,9 +153,9 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect -72 600 168 616)
+	(rect -144 376 96 392)
 	(text "INPUT" (rect 197 0 225 10)(font "Arial" (color 0 0 0)(font_size 6)))
-	(text "VGA_Ball_Pixel_Color[3..0]" (rect 5 0 138 17)(font "Intel Clear" (color 0 0 0)))
+	(text "VGA_Ball_Pixel_Color[3..0]" (rect 5 0 137 17)(font "Intel Clear" (color 0 0 0)))
 	(pt 240 8)
 	(drawing
 		(line (pt 156 12)(pt 181 12)(color 0 0 0))
@@ -169,9 +169,9 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect -88 616 168 632)
+	(rect -160 392 96 408)
 	(text "INPUT" (rect 213 0 241 10)(font "Arial" (color 0 0 0)(font_size 6)))
-	(text "VGA_Spielfeld_Pixel_Color[3..0]" (rect 5 0 160 17)(font "Intel Clear" (color 0 0 0)))
+	(text "VGA_Spielfeld_Pixel_Color[3..0]" (rect 5 0 159 17)(font "Intel Clear" (color 0 0 0)))
 	(pt 256 8)
 	(drawing
 		(line (pt 172 12)(pt 197 12)(color 0 0 0))
@@ -185,7 +185,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 816 336 996 352)
+	(rect 744 112 924 128)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (color 0 0 0)(font_size 6)))
 	(text "VGA_Pos_X[9..0]" (rect 90 0 174 12)(font "Arial" (color 0 0 0)))
 	(pt 0 8)
@@ -201,7 +201,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 816 352 993 368)
+	(rect 744 128 921 144)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (color 0 0 0)(font_size 6)))
 	(text "VGA_Pos_Y[9..0]" (rect 90 0 171 17)(font "Intel Clear" (color 0 0 0)))
 	(pt 0 8)
@@ -217,7 +217,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 816 368 992 384)
+	(rect 744 144 920 160)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (color 0 0 0)(font_size 6)))
 	(text "VGA_HS" (rect 90 0 130 17)(font "Intel Clear" (color 0 0 0)))
 	(pt 0 8)
@@ -233,7 +233,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 816 384 992 400)
+	(rect 744 160 920 176)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (color 0 0 0)(font_size 6)))
 	(text "VGA_VS" (rect 90 0 130 17)(font "Intel Clear" (color 0 0 0)))
 	(pt 0 8)
@@ -249,7 +249,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 816 456 992 472)
+	(rect 744 232 920 248)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (color 0 0 0)(font_size 6)))
 	(text "VGA_R[7..0]" (rect 90 0 152 12)(font "Arial" (color 0 0 0)))
 	(pt 0 8)
@@ -265,7 +265,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 816 472 992 488)
+	(rect 744 248 920 264)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (color 0 0 0)(font_size 6)))
 	(text "VGA_G[7..0]" (rect 90 0 147 17)(font "Intel Clear" (color 0 0 0)))
 	(pt 0 8)
@@ -281,7 +281,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 816 488 992 504)
+	(rect 744 264 920 280)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (color 0 0 0)(font_size 6)))
 	(text "VGA_B[7..0]" (rect 90 0 147 17)(font "Intel Clear" (color 0 0 0)))
 	(pt 0 8)
@@ -296,7 +296,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 504 432 792 672)
+	(rect 432 208 720 448)
 	(text "Image_Generator" (rect 5 0 89 12)(font "Arial" (color 0 0 0)))
 	(text "ImageGenerator" (rect 8 224 84 241)(font "Intel Clear" (color 0 0 0)))
 	(port
@@ -405,11 +405,11 @@ agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 272 224)(color 0 0 0))
 	)
-	(annotation_block (parameter)(rect 792 536 1016 576))
+	(annotation_block (parameter)(rect 720 312 944 352))
 	(fill (color 255 255 255))
 )
 (symbol
-	(rect 256 312 456 456)
+	(rect 184 88 384 232)
 	(text "VGA_Controller" (rect 5 0 80 12)(font "Arial" (color 0 0 0)))
 	(text "VGAController" (rect 8 128 77 140)(font "Arial" (color 0 0 0)))
 	(port
@@ -514,147 +514,147 @@ agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 184 128)(color 0 0 0))
 	)
-	(annotation_block (parameter)(rect 456 96 736 312))
+	(annotation_block (parameter)(rect 384 -128 664 88))
 	(fill (color 255 255 255))
 )
 (connector
-	(pt 224 344)
-	(pt 224 464)
+	(pt 152 120)
+	(pt 152 240)
 	(color 0 0 0)
 )
 (connector
-	(pt 208 360)
-	(pt 208 480)
+	(pt 136 136)
+	(pt 136 256)
 	(color 0 0 0)
 )
 (connector
-	(pt 456 408)
-	(pt 480 408)
+	(pt 408 184)
+	(pt 408 272)
 	(color 0 0 0)
 )
 (connector
-	(pt 480 408)
-	(pt 480 496)
+	(pt 152 240)
+	(pt 432 240)
 	(color 0 0 0)
 )
 (connector
-	(pt 224 464)
-	(pt 504 464)
+	(pt 136 256)
+	(pt 432 256)
 	(color 0 0 0)
 )
 (connector
-	(pt 208 480)
-	(pt 504 480)
+	(pt 408 272)
+	(pt 432 272)
 	(color 0 0 0)
 )
 (connector
-	(pt 480 496)
-	(pt 504 496)
+	(pt 152 120)
+	(pt 184 120)
+)
+(connector
+	(pt 136 136)
+	(pt 184 136)
 	(color 0 0 0)
 )
 (connector
-	(pt 456 344)
-	(pt 816 344)
+	(pt 720 240)
+	(pt 744 240)
 	(bus)
 	(color 0 0 0)
 )
 (connector
-	(pt 456 360)
-	(pt 816 360)
+	(pt 720 256)
+	(pt 744 256)
 	(bus)
 	(color 0 0 0)
 )
 (connector
-	(pt 456 376)
-	(pt 816 376)
-	(color 0 0 0)
-)
-(connector
-	(pt 456 392)
-	(pt 816 392)
-	(color 0 0 0)
-)
-(connector
-	(pt 792 464)
-	(pt 816 464)
+	(pt 720 272)
+	(pt 744 272)
 	(bus)
 	(color 0 0 0)
 )
 (connector
-	(pt 792 480)
-	(pt 816 480)
+	(pt 384 120)
+	(pt 744 120)
 	(bus)
 	(color 0 0 0)
 )
 (connector
-	(pt 792 496)
-	(pt 816 496)
+	(pt 384 136)
+	(pt 744 136)
 	(bus)
 	(color 0 0 0)
 )
 (connector
-	(pt 504 512)
-	(pt 168 512)
+	(pt 384 152)
+	(pt 744 152)
 	(color 0 0 0)
 )
 (connector
-	(pt 504 528)
-	(pt 168 528)
+	(pt 384 168)
+	(pt 744 168)
 	(color 0 0 0)
 )
 (connector
-	(pt 504 544)
-	(pt 168 544)
+	(pt 384 184)
+	(pt 408 184)
 	(color 0 0 0)
 )
 (connector
-	(pt 504 560)
-	(pt 168 560)
+	(pt 96 120)
+	(pt 152 120)
+)
+(connector
+	(pt 96 136)
+	(pt 136 136)
 	(color 0 0 0)
 )
 (connector
-	(pt 504 576)
-	(pt 168 576)
+	(pt 96 288)
+	(pt 432 288)
+	(color 0 0 0)
+)
+(connector
+	(pt 96 304)
+	(pt 432 304)
+	(color 0 0 0)
+)
+(connector
+	(pt 96 320)
+	(pt 432 320)
+	(color 0 0 0)
+)
+(connector
+	(pt 96 336)
+	(pt 432 336)
+	(color 0 0 0)
+)
+(connector
+	(pt 96 352)
+	(pt 432 352)
 	(bus)
 	(color 0 0 0)
 )
 (connector
-	(pt 504 592)
-	(pt 168 592)
+	(pt 96 368)
+	(pt 432 368)
 	(bus)
 	(color 0 0 0)
 )
 (connector
-	(pt 504 608)
-	(pt 168 608)
+	(pt 96 384)
+	(pt 432 384)
 	(bus)
 	(color 0 0 0)
 )
 (connector
-	(pt 504 624)
-	(pt 168 624)
+	(pt 96 400)
+	(pt 432 400)
 	(bus)
 	(color 0 0 0)
 )
-(connector
-	(pt 168 344)
-	(pt 224 344)
-)
-(connector
-	(pt 224 344)
-	(pt 256 344)
-)
-(connector
-	(pt 168 360)
-	(pt 208 360)
-	(color 0 0 0)
-)
-(connector
-	(pt 208 360)
-	(pt 256 360)
-	(color 0 0 0)
-)
-(junction (pt 208 360))
-(junction (pt 224 344))
-(text "VGA" (rect 192 264 217 283)(font "Intel Clear" (color 0 0 0)(font_size 8)))
-(rectangle (rect 184 264 800 688))
+(junction (pt 152 120))
+(junction (pt 136 136))
+(text "VGA" (rect 120 40 145 59)(font "Intel Clear" (color 0 0 0)(font_size 8)))
+(rectangle (rect 112 40 728 464))

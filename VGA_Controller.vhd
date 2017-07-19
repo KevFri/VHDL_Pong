@@ -11,13 +11,13 @@ generic(
 	horizontal_back_porch_width:	integer := 64;   	--Horizontal back porch Breite, Maximalwert 511
 	horizontal_image_width:			integer := 800;	--Horizontal image Breite, Maximalwert 2047
 	horizontal_front_porch_width: integer := 56;		--Horizontal front porch Breite, Maximalwert 255
-	horizontal_sync_pulse_polariy:std_logic := '1';	--Horizontal synchronimpuls Polarität (1 = posiiv, 0 = negativ)
+	horizontal_sync_pulse_polarity:std_logic := '1';	--Horizontal synchronimpuls Polarität (1 = posiiv, 0 = negativ)
 	----------------------------------------------------------------------
 	vertikal_sync_pulse_width:	integer := 6;			--Vertikal synchronimpuls Breite in Pixel, Maximalwert 15
 	vertikal_back_porch_width:	integer := 23;   		--Vertikal back porch Breite, Maximalwert 127
 	vertikal_image_width:			integer := 600;	--Vertikal image Breite, Maximalwert 2047
 	vertikal_front_porch_width: integer := 37;		--Vertikal front porch Breite, Maximalwert 63
-	vertikal_sync_pulse_polariy:std_logic := '1'		--Vertikal synchronimpuls Polarität (1 = posiiv, 0 = negativ)
+	vertikal_sync_pulse_polarity:std_logic := '1'		--Vertikal synchronimpuls Polarität (1 = posiiv, 0 = negativ)
 );
 
 port(
@@ -52,8 +52,8 @@ begin
 		if(Reset = '1') then
 			horizontal_count := (others => '0');
 			vertikal_count := (others => '0');
-			VGA_HS <= NOT horizontal_sync_pulse_polariy;
-			VGA_VS <= NOT vertikal_sync_pulse_polariy;
+			VGA_HS <= NOT horizontal_sync_pulse_polarity;
+			VGA_VS <= NOT vertikal_sync_pulse_polarity;
 			ImageGen_En <= '0';
 			VGA_Pos_X <= (others => '0');
 			VGA_Pos_Y <= (others => '0');
@@ -75,17 +75,17 @@ begin
 			
 			--Horizontal Synchronimpuls
 			if((horizontal_count < (to_unsigned(horizontal_image_width + horizontal_front_porch_width,13))) OR( horizontal_count >= (to_unsigned(horizontal_image_width + horizontal_front_porch_width + horizontal_sync_pulse_width,13)))) then
-				VGA_HS <= NOT horizontal_sync_pulse_polariy;
+				VGA_HS <= NOT horizontal_sync_pulse_polarity;
 			else
-				VGA_HS <= horizontal_sync_pulse_polariy;
+				VGA_HS <= horizontal_sync_pulse_polarity;
 			end if;
 			
 		
 			--Vertikal Synchronimpuls
 			if((vertikal_count < to_unsigned(vertikal_image_width + vertikal_front_porch_width,13)) OR( vertikal_count >= to_unsigned(vertikal_image_width + vertikal_front_porch_width + vertikal_sync_pulse_width,13))) then
-				VGA_VS <= NOT vertikal_sync_pulse_polariy;
+				VGA_VS <= NOT vertikal_sync_pulse_polarity;
 			else
-				VGA_VS <= vertikal_sync_pulse_polariy;
+				VGA_VS <= vertikal_sync_pulse_polarity;
 			end if;
 			
 			

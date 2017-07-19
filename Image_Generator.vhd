@@ -33,8 +33,6 @@ port(
 	VGA_G: out std_logic_vector(7 downto 0):= x"00";		--Farbausgabe Grün aus LUT für DAC
 	VGA_B: out std_logic_vector(7 downto 0):= x"00" 		--Farbausgabe Blau aus LUT für DAC
 	);
-
-
 begin	
 
 end entity Image_Generator;
@@ -147,6 +145,4 @@ begin
 		--0xD	255,85,255	bright magenta
 		--0xE	255,255,85	yellow
 		--0xF	255,255,255	white
-
-
 end architecture behaviour;
