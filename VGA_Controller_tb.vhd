@@ -25,17 +25,17 @@ architecture behaviour of VGA_Controller_tb is
 begin
 
 VGA_Controller: entity work.VGA_Controller
-generic map(	
-	horizontal_sync_pulse_width=>2,
-	horizontal_back_porch_width=>3,
-	horizontal_image_width=>4,
-	horizontal_front_porch_width=> 1,
-	horizontal_sync_pulse_polarity=>'1',
-	vertikal_sync_pulse_width=> 2,
-	vertikal_back_porch_width=>3,
-	vertikal_image_width=>3,
-	vertikal_front_porch_width=> 1   ,
-	vertikal_sync_pulse_polarity=>'1')
+--generic map(	
+--	horizontal_sync_pulse_width=>2,
+--	horizontal_back_porch_width=>3,
+--	horizontal_image_width=>4,
+--	horizontal_front_porch_width=> 1,
+--	horizontal_sync_pulse_polarity=>'1',
+--	vertikal_sync_pulse_width=> 2,
+--	vertikal_back_porch_width=>3,
+--	vertikal_image_width=>3,
+--	vertikal_front_porch_width=> 1   ,
+--	vertikal_sync_pulse_polarity=>'1')
 port map(Reset, Clk, VGA_Pos_X, VGA_Pos_Y, VGA_HS, VGA_VS, ImageGen_En);
 
 

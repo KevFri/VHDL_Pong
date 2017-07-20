@@ -5,32 +5,6 @@ use ieee.numeric_std.all;
 
 use work.Color.all;
 
---Image_Generator
---Der Image_Generator erhaelt die Enable- und Farbsignale der einzelnen Module und gibt diese an die VGA Ausgabe als Rot, Gruen und Blau
---Werte aus.
---
---Generics:
---		Background_Color :			Hintergrundfarbe
---
---Ports:
---		Reset:			asynchroner Reset, High aktiv
---		Clk:				50MHz Clock
---		
---		ImageGen_En:	Enable für Image Generator, High aktiv
---		
---		VGA_Paddle1_Pixel_En:		Enable für aktuelles Pixel, High aktiv
---		VGA_Paddle2_Pixel_En:		Enable für aktuelles Pixel, High aktiv
---		VGA_Ball_Pixel_En:			Enable für aktuelles Pixel, High aktiv
---		VGA_Spielfeld_Pixel_En:		Enable für aktuelles Pixel, High aktiv
---		
---		VGA_Paddle1_Pixel_Color:	Farbe für aktuelles Pixel
---		VGA_Paddle2_Pixel_Color: 	Farbe für aktuelles Pixel
---		VGA_Ball_Pixel_Color: 		Farbe für aktuelles Pixel
---		VGA_Spielfeld_Pixel_Color: Farbe für aktuelles Pixel
---		
---		VGA_R: 	Farbausgabe Rot aus LUT für DAC
---		VGA_G: 	Farbausgabe Grün aus LUT für DAC
---		VGA_B: 	Farbausgabe Blau aus LUT für DAC
 
 
 
@@ -65,7 +39,7 @@ end entity Image_Generator;
 
 architecture behaviour of Image_Generator is
 	--internes Farbsignal, zum austausch zwischen den Prozessen
-	signal VGA_Pixel_Color: std_logic_vector(3 downto 0) := black;
+	signal VGA_Pixel_Color: std_logic_vector(3 downto 0) := white;
 
 begin
 
@@ -94,9 +68,8 @@ begin
 		end if;
 	end process;
 	
-	RGB_Prozess: process(Clk) --wertet das interne Signal VGA_Pixel_Color aus und setzt dieses in RGB Werte um
+	RGB_Prozess: process(VGA_Pixel_Color) --wertet das interne Signal VGA_Pixel_Color aus und setzt dieses in RGB Werte um
 	begin
-		if (rising_edge(Clk)) then
 					case VGA_Pixel_Color is
 						when black   			=> 	VGA_R <= 8D"0";
 															VGA_G <= 8D"0";
@@ -125,19 +98,19 @@ begin
 						when dark_gray   		=> 	VGA_R <= 8D"85"; 
 															VGA_G <= 8D"85";
 															VGA_B <= 8D"85";
-						when light_blue   	=>		VGA_R <= 8D"85"; 
+						when ligth_blue   	=>		VGA_R <= 8D"85"; 
 															VGA_G <= 8D"85";
 															VGA_B <= 8D"255";
-						when light_green   	=> 	VGA_R <= 8D"85"; 
+						when ligth_green   	=> 	VGA_R <= 8D"85"; 
 															VGA_G <= 8D"255";
 															VGA_B <= 8D"85"; 
-						when light_cyan   	=> 	VGA_R <= 8D"85"; 
+						when ligth_cyan   	=> 	VGA_R <= 8D"85"; 
 															VGA_G <= 8D"255";
 															VGA_B <= 8D"255";
-						when light_red  		=> 	VGA_R <= 8D"255"; 
+						when ligth_red  		=> 	VGA_R <= 8D"255"; 
 															VGA_G <= 8D"85";
 															VGA_B <= 8D"85"; 
-						when light_magenta   => 	VGA_R <= 8D"255"; 
+						when ligth_magenta   => 	VGA_R <= 8D"255"; 
 															VGA_G <= 8D"85";
 															VGA_B <= 8D"255"; 
 						when yellow   			=> 	VGA_R <= 8D"255"; 
@@ -150,7 +123,6 @@ begin
 															VGA_G <= 8D"0";
 															VGA_B <= 8D"0";										
 				end case;
-			end if;
 		end process;
 		--Color Table
 		--CGA	RGB	Farbe
